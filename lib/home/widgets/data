@@ -1,0 +1,95 @@
+    
+
+   Container(
+      color: Colors.white,
+      child: Center(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              // height: 80,
+              width: 210,
+              padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+              color: Colors.black,
+              child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                     children: [
+                  Text(
+                    cityName!,
+                    style: TextStyle(
+                      fontSize: 25,
+                      color: Colors.white,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                  Text(
+                    currentDescription,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.normal,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Column(
+              children: [
+                //1st box
+                Container(
+                  child: Container(
+                    width: 100,
+                    padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                    color: Colors.black,
+                    child: Column(
+                      children: [
+                        Icon(
+                          descriptionIcon1,
+                          color: Colors.white,
+                        ),
+                        Text(
+                          descriptionChance1,
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                        Text(
+                          descriptionCondition1,
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                Row(
+                  children: [
+                    //2ndbox
+                    Container(
+                      child: Column(
+                        children: [
+                          Icon(descriptionIcon2),
+                          Text(descriptionChance2),
+                          Text(descriptionCondition2),
+                        ],
+                      ),
+                    ),
+                    //3rd box
+                    Container(
+                      child: Column(
+                        children: [
+                          Icon(descriptionIcon3),
+                          Text(descriptionChance3),
+                          Text(descriptionCondition3)
+                        ],
+                      ),
+                    ),
+                  ],
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+    );
